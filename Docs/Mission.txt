@@ -1,0 +1,15 @@
+
+The goal is to better understand your problem-solving approach, architectural thinking, and code quality in a practical scenario.
+
+Please find the assignment attached.
+
+A few important notes:
+
+-   The expected time investment is approximately 4-5 hours.
+    
+-   Focus on clean structure and reasoning rather than over-engineering.
+    
+-   Include a README explaining your decisions and assumptions.
+    
+-   Feel free to make reasonable assumptions where requirements are not fully specified; just document them.
+    
