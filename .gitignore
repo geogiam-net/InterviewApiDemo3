@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/src/Demo.ApiProject/bin/Debug/net10.0
+/src/Demo.ApiProject/obj
+/src/Demo.Domain/bin/Debug/net10.0
+/src/Demo.Domain/obj
+/src/Demo.Infrastructure.SqlUserStorage/obj
+/src/Demo.Infrastructure.SqlUserStorage/bin/Debug/net10.0
