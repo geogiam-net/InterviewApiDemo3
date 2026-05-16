@@ -9,3 +9,5 @@
 /src/Demo.Domain/obj
 /src/Demo.Infrastructure.SqlUserStorage/obj
 /src/Demo.Infrastructure.SqlUserStorage/bin/Debug/net10.0
+/src/Demo.Infrastructure.SqlStorage/bin/Debug/net10.0
+/src/Demo.Infrastructure.SqlStorage/obj
