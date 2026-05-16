@@ -32,12 +32,12 @@ public class EmployeeStorageService(ApplicationDbContext dbContext) : IEmployeeS
     {
         var query = dbContext.Employees.AsNoTracking();
 
-        if (pageNum >= 0)
+        if (pageNum > 0)
         {
             query = query.Skip(pageNum * (pageSize < 0 ? 0 : pageSize));
         }
 
-        if (pageSize >= 0)
+        if (pageSize > 0)
         {
             query = query.Take(pageSize);
         }

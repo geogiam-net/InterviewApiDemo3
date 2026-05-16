@@ -2,6 +2,8 @@ using Demo.Api.Endpoints;
 using Demo.Domain.Interfaces;
 using Demo.Api.Exceptions;
 using Demo.Api.Startup;
+using Demo.Infrastructure.SqlStorage.Services;
+using Demo.Domain.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,14 +11,16 @@ builder.Services.AddOpenApi();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddScoped<IEmployeeStorageService, EmployeeStorageService>();
+builder.Services.AddScoped<IShiftStorageService, ShiftStorageService>();
+builder.Services.AddScoped<IEmployeeService, EmployeeService>();
+builder.Services.AddScoped<IShiftService, ShiftService>();
 builder.Services.AddInMemoryDbContext();
-builder.Services.AddScoped<IEmployeeStorageService>();
-builder.Services.AddScoped<IShiftStorageService>();
-builder.Services.AddScoped<IEmployeeService>();
-builder.Services.AddScoped<IShiftService>();
 
 builder.Services.AddProblemDetails();
 builder.Services.AddExceptionHandler<ValidationExceptionHandler>();
+builder.Services.AddExceptionHandler<ConflictExceptionHandler>();
+builder.Services.AddExceptionHandler<NotFoundExceptionHandler>();
 
 var app = builder.Build();
 

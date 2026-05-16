@@ -9,10 +9,10 @@ internal static class ShiftEndpoints
     internal static void MapShiftEndpoints(this IEndpointRouteBuilder builder)
     {
         builder.MapPost("/api/shifts",
-            async Task<IResult> (string name, Role role, DateTime startTime, DateTime endTime, 
+            async Task<IResult> (string name, Role role, DateTime startTimeUtc, DateTime endTimeUtc, 
             IShiftService shiftService, CancellationToken cancellationToken) =>
             {
-                var newShift = await shiftService.CreateShiftAsync(name, role, startTime, endTime, cancellationToken);
+                var newShift = await shiftService.CreateShiftAsync(name, role, startTimeUtc, endTimeUtc, cancellationToken);
 
                 // return 201 with link to created resource
                 return TypedResults.Created(
@@ -44,18 +44,18 @@ internal static class ShiftEndpoints
             });
 
         builder.MapGet("/api/shifts/date/{date}",
-            async Task<IResult> (DateOnly date, IShiftService shiftService, CancellationToken cancellationToken) =>
+            async Task<IResult> (DateOnly dateUtc, IShiftService shiftService, CancellationToken cancellationToken) =>
             {
-                var shifts = await shiftService.GetShiftsOnDateAsync(date, cancellationToken);
+                var shifts = await shiftService.GetShiftsOnDateAsync(dateUtc, cancellationToken);
                 var shiftDtos = shifts.Select(e => new ShiftDto(e));
                 return TypedResults.Ok(shiftDtos);
             });
 
-        builder.MapPut("/api/shifts/{id}/employee/{employeeId}",
-             async Task<IResult> (Guid id, Guid employeeId,
+        builder.MapPut("/api/shifts/{shiftId}/employee/{employeeId}",
+             async Task<IResult> (Guid shiftId, Guid employeeId,
              IShiftService shiftService, CancellationToken cancellationToken) =>
              {
-                 await shiftService.AssignShiftToEmployeeAsync(id, employeeId, cancellationToken);
+                 await shiftService.AssignEmployeeToShiftAsync(shiftId, employeeId, cancellationToken);
                  return TypedResults.Ok();
              });
     }

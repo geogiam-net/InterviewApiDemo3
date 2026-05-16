@@ -12,7 +12,5 @@ public interface IShiftService
 
     public Task<IEnumerable<Shift>> GetShiftsOnDateAsync(DateOnly date, CancellationToken cancellationToken = default);
 
-    public Task AssignShiftToEmployeeAsync(Guid shiftId, Guid employeeId, CancellationToken cancellationToken = default);
-
-    public Task AssignShiftToEmployeeAsync(Shift shift, Employee employee, CancellationToken cancellationToken = default);
+    public Task AssignEmployeeToShiftAsync(Guid shiftId, Guid employeeId, CancellationToken cancellationToken = default);
 }

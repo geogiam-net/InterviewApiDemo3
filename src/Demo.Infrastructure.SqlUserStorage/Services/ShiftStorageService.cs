@@ -18,6 +18,7 @@ public class ShiftStorageService(ApplicationDbContext dbContext) : IShiftStorage
     public async Task<Shift?> GetShiftAsync(Guid id, CancellationToken cancellationToken = default)
     {
         return await dbContext.Shifts
+            .Include(s => s.Employees)
             .AsNoTracking()
             .FirstOrDefaultAsync(x => x.Id == id, cancellationToken);
     }
@@ -37,13 +38,28 @@ public class ShiftStorageService(ApplicationDbContext dbContext) : IShiftStorage
 
         return await dbContext.Shifts
             .AsNoTracking()
-            .Where(s => dateTime.IsInsideTimeRange(s.StartTime, s.EndTime))
+            .Include(s => s.Employees)
+            .Where(s => dateTime.IsInsideDateRange(s.StartTime, s.EndTime))
             .ToListAsync(cancellationToken);
     }
 
-    public async Task AssignShiftToEmployeeAsync(Shift shift, Employee employee, CancellationToken cancellationToken = default)
+    public async Task AssignEmployeeToShiftAsync(Guid shiftId, Guid employeeId, CancellationToken cancellationToken = default)
     {
-        shift.Employees.Add(employee);
+        // Load the tracked shift including its employees from the context
+        var trackedShift = await dbContext.Shifts
+            .Include(s => s.Employees)
+            .FirstOrDefaultAsync(s => s.Id == shiftId, cancellationToken);
+
+        // Load tracked Employee instance so EF can manage the relationship correctly
+        var trackedEmployee = await dbContext.Employees
+            .FirstOrDefaultAsync(e => e.Id == employeeId, cancellationToken);
+
+        if(trackedShift is null || trackedEmployee is null)
+        {
+            return;
+        }
+
+        trackedShift.Employees.Add(trackedEmployee);
         await dbContext.SaveChangesAsync(cancellationToken);
     }
 }

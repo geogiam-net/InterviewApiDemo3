@@ -20,7 +20,7 @@ public class EmployeeService(IEmployeeStorageService employeeStorageService) : I
         var existingUser = await employeeStorageService.GetEmployeeAsync(name, lastname, cancellationToken);
         if (existingUser is not null)
         {
-            throw new ValidationException(["Employee already exists"]);
+            throw new ConflictException(["Employee already exists"]);
         }
 
         return await employeeStorageService.CreateEmployeeAsync(newEmployee, cancellationToken);

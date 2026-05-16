@@ -37,33 +37,32 @@ public class ShiftService(IShiftStorageService shiftStorageService, IEmployeeSer
         return await shiftStorageService.GetShiftsOnDateAsync(date, cancellationToken);
     }
 
-    public async Task AssignShiftToEmployeeAsync(Guid shiftId, Guid employeeId, CancellationToken cancellationToken = default)
+    public async Task AssignEmployeeToShiftAsync(Guid shiftId, Guid employeeId, CancellationToken cancellationToken = default)
     {
         var shift = await shiftStorageService.GetShiftAsync(shiftId, cancellationToken);
         if (shift is null)
         {
-            throw new ValidationException(["Shift not found"]);
+            throw new NotFoundException(["Shift not found"]);
         }
 
         var employee = await employeeService.GetEmployeeAsync(employeeId, cancellationToken);
         if (employee is null)
         {
-            throw new ValidationException(["Employee not found"]);
+            throw new NotFoundException(["Employee not found"]);
         }
 
-        await AssignShiftToEmployeeAsync(shift, employee, cancellationToken);
-    }
+        if(shift.Employees.Any(e => e.Id == employeeId))
+        {
+            return;
+        }
 
-    public async Task AssignShiftToEmployeeAsync(Shift shift, Employee employee, CancellationToken cancellationToken = default)
-    {
         var employeeShifts = await shiftStorageService.GetShiftsFromEmployeeAsync(employee.Id, cancellationToken);
-
         var errorMessages = ShiftValidator.ValidateShiftAssignment(shift, employeeShifts);
         if (errorMessages.Any())
         {
-            throw new ValidationException(errorMessages);
+            throw new ConflictException(errorMessages);
         }
 
-        await shiftStorageService.AssignShiftToEmployeeAsync(shift, employee, cancellationToken);
+        await shiftStorageService.AssignEmployeeToShiftAsync(shift.Id, employee.Id, cancellationToken);
     }
 }
