@@ -5,7 +5,7 @@ using Demo.Domain.Validators;
 
 namespace Demo.Domain.Services;
 
-public class EmployeeService(IEmployeeStorageService employeeStorageService) : IEmployeeService
+public class EmployeeService(IEmployeeRepository employeeStorageService) : IEmployeeService
 {
     public async Task<Employee> CreateEmployeeAsync(string name, string lastname, CancellationToken cancellationToken = default) 
     { 

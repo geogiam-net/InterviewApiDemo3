@@ -2,7 +2,7 @@
 
 namespace Demo.Domain.Interfaces;
 
-public interface IEmployeeStorageService
+public interface IEmployeeRepository
 {
     public Task<Employee> CreateEmployeeAsync(Employee employee, CancellationToken cancellationToken = default);
 

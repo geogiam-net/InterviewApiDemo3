@@ -5,7 +5,7 @@ using Demo.Infrastructure.SqlStorage.Data;
 
 namespace Demo.Infrastructure.SqlStorage.Services;
 
-public class EmployeeStorageService(ApplicationDbContext dbContext) : IEmployeeStorageService
+public class EmployeeRepository(ApplicationDbContext dbContext) : IEmployeeRepository
 {
     public async Task<Employee> CreateEmployeeAsync(Employee employee, CancellationToken cancellationToken = default)
     {
