@@ -3,8 +3,6 @@ using Demo.Domain.Models;
 
 namespace Demo.Domain.Validators;
 
-// This can be transformed into instance class and give it a translation service to return the error messages in the user language.
-// For simplicity, I am keeping it as static class and hardcoding the error messages in English.
 public static class ShiftValidator
 {
     public static string[] ValidateDates(Shift shift)

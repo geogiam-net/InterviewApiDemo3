@@ -6,7 +6,7 @@ using Demo.Domain.Exceptions;
 
 namespace Demo.Domain.Services;
 
-public class ShiftService(IShiftRepository shiftStorageService, IEmployeeService employeeService) : IShiftService
+public class ShiftService(IShiftRepository shiftRepository, IEmployeeService employeeService) : IShiftService
 {
     public async Task<Shift> CreateShiftAsync(string name, Role role, DateTime startTime, DateTime endTime, CancellationToken cancellationToken = default)
     { 
@@ -19,27 +19,27 @@ public class ShiftService(IShiftRepository shiftStorageService, IEmployeeService
             throw new ValidationException(errorMessages);
         }
 
-        return await shiftStorageService.CreateShiftAsync(newShift, cancellationToken);
+        return await shiftRepository.CreateShiftAsync(newShift, cancellationToken);
     }
 
     public async Task<Shift?> GetShiftAsync(Guid id, CancellationToken cancellationToken = default)
     {
-        return await shiftStorageService.GetShiftAsync(id, cancellationToken);
+        return await shiftRepository.GetShiftAsync(id, cancellationToken);
     }
 
     public async Task<IEnumerable<Shift>> GetShiftsFromEmployeeAsync(Guid employeeId, CancellationToken cancellationToken = default)
     {
-        return await shiftStorageService.GetShiftsFromEmployeeAsync(employeeId, cancellationToken);
+        return await shiftRepository.GetShiftsFromEmployeeAsync(employeeId, cancellationToken);
     }
 
     public async Task<IEnumerable<Shift>> GetShiftsOnDateAsync(DateOnly date, CancellationToken cancellationToken = default)
     {
-        return await shiftStorageService.GetShiftsOnDateAsync(date, cancellationToken);
+        return await shiftRepository.GetShiftsOnDateAsync(date, cancellationToken);
     }
 
     public async Task AssignEmployeeToShiftAsync(Guid shiftId, Guid employeeId, CancellationToken cancellationToken = default)
     {
-        var shift = await shiftStorageService.GetShiftAsync(shiftId, cancellationToken);
+        var shift = await shiftRepository.GetShiftAsync(shiftId, cancellationToken);
         if (shift is null)
         {
             throw new NotFoundException(["Shift not found"]);
@@ -56,13 +56,13 @@ public class ShiftService(IShiftRepository shiftStorageService, IEmployeeService
             return;
         }
 
-        var employeeShifts = await shiftStorageService.GetShiftsFromEmployeeAsync(employee.Id, cancellationToken);
+        var employeeShifts = await shiftRepository.GetShiftsFromEmployeeAsync(employee.Id, cancellationToken);
         var errorMessages = ShiftValidator.ValidateShiftAssignment(shift, employeeShifts);
         if (errorMessages.Any())
         {
             throw new ConflictException(errorMessages);
         }
 
-        await shiftStorageService.AssignEmployeeToShiftAsync(shift.Id, employee.Id, cancellationToken);
+        await shiftRepository.AssignEmployeeToShiftAsync(shift.Id, employee.Id, cancellationToken);
     }
 }

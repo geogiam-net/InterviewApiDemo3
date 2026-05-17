@@ -5,7 +5,7 @@ using Demo.Domain.Validators;
 
 namespace Demo.Domain.Services;
 
-public class EmployeeService(IEmployeeRepository employeeStorageService) : IEmployeeService
+public class EmployeeService(IEmployeeRepository employeeRepository) : IEmployeeService
 {
     public async Task<Employee> CreateEmployeeAsync(string name, string lastname, CancellationToken cancellationToken = default) 
     { 
@@ -17,22 +17,22 @@ public class EmployeeService(IEmployeeRepository employeeStorageService) : IEmpl
             throw new ValidationException(errorMessages);
         }
 
-        var existingUser = await employeeStorageService.GetEmployeeAsync(name, lastname, cancellationToken);
+        var existingUser = await employeeRepository.GetEmployeeAsync(name, lastname, cancellationToken);
         if (existingUser is not null)
         {
             throw new ConflictException(["Employee already exists"]);
         }
 
-        return await employeeStorageService.CreateEmployeeAsync(newEmployee, cancellationToken);
+        return await employeeRepository.CreateEmployeeAsync(newEmployee, cancellationToken);
     }
 
     public async Task<Employee?> GetEmployeeAsync(Guid id, CancellationToken cancellationToken = default) 
     { 
-        return await employeeStorageService.GetEmployeeAsync(id, cancellationToken);
+        return await employeeRepository.GetEmployeeAsync(id, cancellationToken);
     }
 
     public async Task<IEnumerable<Employee>> GetEmployeesAsync(int pageSize = 0, int pageNum = 0, CancellationToken cancellationToken = default) 
     { 
-        return await employeeStorageService.GetEmployeesAsync(pageSize, pageNum, cancellationToken);
+        return await employeeRepository.GetEmployeesAsync(pageSize, pageNum, cancellationToken);
     }
 }

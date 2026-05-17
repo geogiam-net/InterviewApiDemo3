@@ -2,8 +2,6 @@
 
 namespace Demo.Domain.Validators;
 
-// This can be transformed into instance class and give it a translation service to return the error messages in the user language.
-// For simplicity, I am keeping it as static class and hardcoding the error messages in English.
 public static class EmployeeValidator
 {
     public static string[] Validate(Employee employee)
