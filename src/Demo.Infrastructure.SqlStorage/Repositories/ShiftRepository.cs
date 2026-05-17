@@ -6,7 +6,7 @@ using Demo.Infrastructure.SqlStorage.Data;
 
 namespace Demo.Infrastructure.SqlStorage.Services;
 
-public class ShiftRepository(ApplicationDbContext dbContext) : IShiftStorageService
+public class ShiftRepository(ApplicationDbContext dbContext) : IShiftRepository
 {
     public async Task<Shift> CreateShiftAsync(Shift shift, CancellationToken cancellationToken = default)
     {

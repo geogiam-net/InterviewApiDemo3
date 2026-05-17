@@ -2,7 +2,7 @@
 
 namespace Demo.Domain.Interfaces;
 
-public interface IShiftStorageService
+public interface IShiftRepository
 {
     public Task<Shift> CreateShiftAsync(Shift shift, CancellationToken cancellationToken = default);
 

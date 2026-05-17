@@ -6,7 +6,7 @@ using Demo.Domain.Exceptions;
 
 namespace Demo.Domain.Services;
 
-public class ShiftService(IShiftStorageService shiftStorageService, IEmployeeService employeeService) : IShiftService
+public class ShiftService(IShiftRepository shiftStorageService, IEmployeeService employeeService) : IShiftService
 {
     public async Task<Shift> CreateShiftAsync(string name, Role role, DateTime startTime, DateTime endTime, CancellationToken cancellationToken = default)
     { 
