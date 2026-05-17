@@ -1,119 +1,329 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.3.0 Chrome/140.0.7339.249 Electron/38.7.2 Safari/537.36" version="29.3.0">
   <diagram name="Page-1" id="pvGcYtbvGf0bFREGgERf">
-    <mxGraphModel dx="1545" dy="795" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2181" dy="2122" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4000" pageHeight="1000" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="rJBPTnD08XIIEsOxQ4kW-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;color: rgb(0, 127, 255);&quot;&gt;Domain&lt;/font&gt;" vertex="1">
-          <mxGeometry height="30" width="60" x="60" y="269.67" as="geometry" />
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-47" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#009900;" value="" vertex="1">
+          <mxGeometry height="170" width="710" x="1637" y="360" as="geometry" />
         </mxCell>
-        <mxCell id="rJBPTnD08XIIEsOxQ4kW-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;color: rgb(0, 127, 255);&quot;&gt;Infrastructure&lt;/font&gt;" vertex="1">
-          <mxGeometry height="30" width="100" x="30" y="339.67" as="geometry" />
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-43" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#009900;" value="" vertex="1">
+          <mxGeometry height="250" width="710" x="1637" y="530" as="geometry" />
         </mxCell>
-        <mxCell id="rJBPTnD08XIIEsOxQ4kW-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;color: rgb(0, 102, 204);&quot;&gt;Presentation&lt;/font&gt;" vertex="1">
-          <mxGeometry height="30" width="100" x="40" y="199.67000000000002" as="geometry" />
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-85" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#009900;" value="" vertex="1">
+          <mxGeometry height="250" width="1000" x="2770" y="330" as="geometry" />
         </mxCell>
-        <mxCell id="rJBPTnD08XIIEsOxQ4kW-4" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="In&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;terfaces&lt;/span&gt;" vertex="1">
-          <mxGeometry height="30" width="100" x="40" y="299.67" as="geometry" />
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-82" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#009900;" value="" vertex="1">
+          <mxGeometry height="250" width="1000" x="2770" y="580" as="geometry" />
         </mxCell>
-        <mxCell id="rJBPTnD08XIIEsOxQ4kW-5" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+        <mxCell id="rJBPTnD08XIIEsOxQ4kW-31" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;color: rgb(3, 37, 255); font-size: 24px;&quot;&gt;Problem Domain&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="210" x="255" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-1" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;rounded=0;strokeColor=#330000;" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="130" y="314.25" as="sourcePoint" />
-            <mxPoint x="320" y="314.25" as="targetPoint" />
+            <mxPoint x="680" y="915" as="sourcePoint" />
+            <mxPoint x="680" y="75" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="rJBPTnD08XIIEsOxQ4kW-6" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-2" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;rounded=0;strokeColor=#330000;" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="130" y="249.67000000000002" as="sourcePoint" />
-            <mxPoint x="320" y="249.67000000000002" as="targetPoint" />
+            <mxPoint x="1440" y="918" as="sourcePoint" />
+            <mxPoint x="1440" y="78" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="rJBPTnD08XIIEsOxQ4kW-7" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-3" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;rounded=0;strokeColor=#330000;" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="130" y="179.67000000000002" as="sourcePoint" />
-            <mxPoint x="320" y="179.67000000000002" as="targetPoint" />
+            <mxPoint x="2540" y="920" as="sourcePoint" />
+            <mxPoint x="2540" y="80" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="rJBPTnD08XIIEsOxQ4kW-8" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-4" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Transport Company&lt;/font&gt;" vertex="1">
+          <mxGeometry height="170" width="300" x="210" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-5" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;color: rgb(3, 37, 255); font-size: 24px;&quot;&gt;Domains&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="210" x="960" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-6" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Employee Management&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Shift Management&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="260" width="470" x="830" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-7" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;exitX=0.01;exitY=0.528;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.993;entryY=0.543;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="130" y="389.67" as="sourcePoint" />
-            <mxPoint x="320" y="389.67" as="targetPoint" />
+            <mxPoint x="834.6999999999998" y="456.28" as="sourcePoint" />
+            <mxPoint x="1296.71" y="460.18000000000006" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="rJBPTnD08XIIEsOxQ4kW-9" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="SqlStorage" vertex="1">
-          <mxGeometry height="30" width="100" x="130" y="319.67" as="geometry" />
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;color: rgb(3, 37, 255); font-size: 24px;&quot;&gt;Domain and System Layers (simple)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="400" x="1800" y="50" as="geometry" />
         </mxCell>
-        <mxCell id="rJBPTnD08XIIEsOxQ4kW-10" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="RabbitMQ" vertex="1">
-          <mxGeometry height="30" width="100" x="220" y="319.67" as="geometry" />
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-11" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;" value="Shift Use Cases" vertex="1">
+          <mxGeometry height="130" width="220" x="1717" y="380" as="geometry" />
         </mxCell>
-        <mxCell id="rJBPTnD08XIIEsOxQ4kW-11" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Api" vertex="1">
-          <mxGeometry height="30" width="100" x="128" y="199.67000000000002" as="geometry" />
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-12" parent="JaOeu8YRZr9RDv0OAoG8-11" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="Create Shift" vertex="1">
+          <mxGeometry height="26" width="220" y="26" as="geometry" />
         </mxCell>
-        <mxCell id="rJBPTnD08XIIEsOxQ4kW-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Ra&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;bbitClient&lt;/span&gt;" vertex="1">
-          <mxGeometry height="30" width="100" x="203" y="199.67000000000002" as="geometry" />
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-13" parent="JaOeu8YRZr9RDv0OAoG8-11" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="Get Shifts from Employee" vertex="1">
+          <mxGeometry height="26" width="220" y="52" as="geometry" />
         </mxCell>
-        <mxCell id="rJBPTnD08XIIEsOxQ4kW-14" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Domain" vertex="1">
-          <mxGeometry height="30" width="100" x="170" y="269.67" as="geometry" />
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-14" parent="JaOeu8YRZr9RDv0OAoG8-11" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="Get Shifts on Date" vertex="1">
+          <mxGeometry height="22" width="220" y="78" as="geometry" />
         </mxCell>
-        <mxCell id="rJBPTnD08XIIEsOxQ4kW-17" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Configuration" vertex="1">
-          <mxGeometry height="30" width="100" x="130" y="349.67" as="geometry" />
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-15" parent="JaOeu8YRZr9RDv0OAoG8-11" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="Assign Employee to Shift" vertex="1">
+          <mxGeometry height="30" width="220" y="100" as="geometry" />
         </mxCell>
-        <mxCell id="rJBPTnD08XIIEsOxQ4kW-18" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="TimeProvider" vertex="1">
-          <mxGeometry height="30" width="100" x="220" y="349.67" as="geometry" />
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-20" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;" value="Employee Use Cases" vertex="1">
+          <mxGeometry height="110" width="220" x="2037" y="380" as="geometry" />
         </mxCell>
-        <mxCell id="rJBPTnD08XIIEsOxQ4kW-19" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=#FFCCE6;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Api" vertex="1">
-          <mxGeometry height="30" width="100" x="602" y="179.5" as="geometry" />
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-21" parent="JaOeu8YRZr9RDv0OAoG8-20" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="Create Employee" vertex="1">
+          <mxGeometry height="26" width="220" y="26" as="geometry" />
         </mxCell>
-        <mxCell id="rJBPTnD08XIIEsOxQ4kW-20" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=#FFCCE6;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Ra&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;bbitClient&lt;/span&gt;" vertex="1">
-          <mxGeometry height="30" width="100" x="545" y="360.5" as="geometry" />
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-22" parent="JaOeu8YRZr9RDv0OAoG8-20" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="Get Employee" vertex="1">
+          <mxGeometry height="26" width="220" y="52" as="geometry" />
         </mxCell>
-        <mxCell id="rJBPTnD08XIIEsOxQ4kW-21" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=#FFCCE6;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Queue&lt;/span&gt;" vertex="1">
-          <mxGeometry height="30" width="140" x="582" y="269.5" as="geometry" />
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-23" parent="JaOeu8YRZr9RDv0OAoG8-20" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="Get all employees" vertex="1">
+          <mxGeometry height="32" width="220" y="78" as="geometry" />
         </mxCell>
-        <mxCell id="rJBPTnD08XIIEsOxQ4kW-22" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=#FFCCE6;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Other possible Apps" vertex="1">
-          <mxGeometry height="30" width="149" x="663" y="360.5" as="geometry" />
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-25" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;" value="Employee Model" vertex="1">
+          <mxGeometry height="90" width="220" x="2037" y="550" as="geometry" />
         </mxCell>
-        <mxCell id="rJBPTnD08XIIEsOxQ4kW-24" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-26" parent="JaOeu8YRZr9RDv0OAoG8-25" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="Name" vertex="1">
+          <mxGeometry height="26" width="220" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-27" parent="JaOeu8YRZr9RDv0OAoG8-25" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="Lastname" vertex="1">
+          <mxGeometry height="38" width="220" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-29" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;" value="Shift Model" vertex="1">
+          <mxGeometry height="130" width="220" x="1717" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-30" parent="JaOeu8YRZr9RDv0OAoG8-29" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="StartDate" vertex="1">
+          <mxGeometry height="26" width="220" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-31" parent="JaOeu8YRZr9RDv0OAoG8-29" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="EndDate" vertex="1">
+          <mxGeometry height="26" width="220" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-32" parent="JaOeu8YRZr9RDv0OAoG8-29" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="Assigned Employees" vertex="1">
+          <mxGeometry height="22" width="220" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-41" edge="1" parent="JaOeu8YRZr9RDv0OAoG8-29" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="JaOeu8YRZr9RDv0OAoG8-34" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="651.58" y="219.5" as="sourcePoint" />
-            <mxPoint x="652" y="259.5" as="targetPoint" />
+            <mxPoint x="110" y="130" as="sourcePoint" />
+            <mxPoint x="160" y="80" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="rJBPTnD08XIIEsOxQ4kW-25" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-33" parent="JaOeu8YRZr9RDv0OAoG8-29" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="Role" vertex="1">
+          <mxGeometry height="30" width="220" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-34" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;" value="Roles" vertex="1">
+          <mxGeometry height="52" width="220" x="1717" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-35" parent="JaOeu8YRZr9RDv0OAoG8-34" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="Driver, Dispatcher, Supervisor" vertex="1">
+          <mxGeometry height="26" width="220" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-40" edge="1" parent="1" source="JaOeu8YRZr9RDv0OAoG8-31" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="702" y="309.5" as="sourcePoint" />
-            <mxPoint x="702.42" y="349.5" as="targetPoint" />
+            <mxPoint x="1927" y="620" as="sourcePoint" />
+            <mxPoint x="2037" y="601" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="rJBPTnD08XIIEsOxQ4kW-26" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-45" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#009900;" value="Service Api" vertex="1">
+          <mxGeometry height="180" width="710" x="1637" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-46" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#009900;" value="Database" vertex="1">
+          <mxGeometry height="130" width="710" x="1637" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-48" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Domain Layer&lt;/font&gt;" vertex="1">
+          <mxGeometry height="50" width="80" x="1500" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-50" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Application&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Layer&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="110" x="1485" y="415" as="geometry" />
+        </mxCell>
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-51" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;User Layer&lt;/span&gt;" vertex="1">
+          <mxGeometry height="50" width="80" x="1500" y="225" as="geometry" />
+        </mxCell>
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-52" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Persistance&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Layer&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="120" x="1485" y="830" as="geometry" />
+        </mxCell>
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-53" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#009900;" value="Infrastructure" vertex="1">
+          <mxGeometry height="770" width="130" x="2370" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-54" edge="1" parent="1" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="612" y="309.5" as="sourcePoint" />
-            <mxPoint x="612.42" y="349.5" as="targetPoint" />
+            <mxPoint x="2000" y="812" as="sourcePoint" />
+            <mxPoint x="2000" y="762" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="rJBPTnD08XIIEsOxQ4kW-27" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div&gt;Receivers&lt;/div&gt;" vertex="1">
-          <mxGeometry height="30" width="100" x="437" y="360.5" as="geometry" />
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-55" edge="1" parent="1" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="2380" y="249.5" as="sourcePoint" />
+            <mxPoint x="2330" y="249.5" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="rJBPTnD08XIIEsOxQ4kW-28" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Sender" vertex="1">
-          <mxGeometry height="30" width="100" x="437" y="179.5" as="geometry" />
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-56" edge="1" parent="1" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="2380" y="864.5" as="sourcePoint" />
+            <mxPoint x="2330" y="864.5" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="rJBPTnD08XIIEsOxQ4kW-31" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;color: rgb(3, 37, 255);&quot;&gt;Layers Diagram&lt;/font&gt;" vertex="1">
-          <mxGeometry height="30" width="100" x="170" y="100" as="geometry" />
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-57" edge="1" parent="1" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1999" y="330" as="sourcePoint" />
+            <mxPoint x="1999" y="380" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="rJBPTnD08XIIEsOxQ4kW-32" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;color: rgb(3, 37, 255);&quot;&gt;RabbitMQ Message&amp;nbsp;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(3, 37, 255);&quot;&gt;Flow Diagram&lt;/font&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="30" width="170" x="510" y="100" as="geometry" />
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-58" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Separation" vertex="1">
+          <mxGeometry height="30" width="120" x="1517" y="340" as="geometry" />
         </mxCell>
-        <mxCell id="rJBPTnD08XIIEsOxQ4kW-33" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Server" vertex="1">
-          <mxGeometry height="30" width="100" x="437" y="269.67" as="geometry" />
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-59" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Separation" vertex="1">
+          <mxGeometry height="30" width="120" x="1517" y="780" as="geometry" />
         </mxCell>
-        <mxCell id="rJBPTnD08XIIEsOxQ4kW-34" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;color: rgb(3, 37, 255);&quot;&gt;Api Endpoints&lt;/font&gt;" vertex="1">
-          <mxGeometry height="30" width="100" x="150" y="480" as="geometry" />
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-60" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;color: rgb(3, 37, 255); font-size: 24px;&quot;&gt;Domain and System Layers (detailed)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="430" x="3050" y="-80" as="geometry" />
         </mxCell>
-        <mxCell id="rJBPTnD08XIIEsOxQ4kW-35" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=#666666;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;div&gt;To create a User&lt;/div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Post&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;/api/users&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Body: User Dto&lt;/div&gt;" vertex="1">
-          <mxGeometry height="75" width="160" x="120" y="535" as="geometry" />
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-61" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;" value="&lt;pre style=&quot;font-family: &amp;quot;Cascadia Mono&amp;quot;; font-size: 9pt;&quot;&gt;&lt;span style=&quot;color:#2b91af&quot;&gt;IShiftService&lt;/span&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="240" width="420" x="2810" y="336" as="geometry" />
         </mxCell>
-        <mxCell id="rJBPTnD08XIIEsOxQ4kW-36" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=#666666;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;div&gt;To retrieve a User&lt;/div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Get&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;/api/users/{username}&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Body: none&lt;/div&gt;" vertex="1">
-          <mxGeometry height="75" width="160" x="120" y="640" as="geometry" />
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-62" parent="JaOeu8YRZr9RDv0OAoG8-61" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;pre style=&quot;&quot;&gt;&lt;div style=&quot;font-family: &amp;quot;Cascadia Mono&amp;quot;; text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;background-color: transparent; white-space: normal; color: rgb(43, 145, 175);&quot;&gt;Task&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; white-space: normal; color: rgb(43, 145, 175);&quot;&gt;Shift&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt;&amp;gt; &lt;/span&gt;&lt;span style=&quot;background-color: transparent; white-space: normal; color: rgb(116, 83, 31);&quot;&gt;CreateShiftAsync&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;background-color: transparent; white-space: normal; color: rgb(0, 0, 255);&quot;&gt;string&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;background-color: transparent; white-space: normal; color: rgb(31, 55, 127);&quot;&gt;name&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot;background-color: transparent; white-space: normal; color: rgb(43, 145, 175);&quot;&gt;Role&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;background-color: transparent; white-space: normal; color: rgb(31, 55, 127);&quot;&gt;role&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot;background-color: transparent; white-space: normal; color: rgb(43, 145, 175);&quot;&gt;DateTime&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;background-color: transparent; white-space: normal; color: rgb(31, 55, 127);&quot;&gt;startTime&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot;background-color: transparent; white-space: normal; color: rgb(43, 145, 175);&quot;&gt;DateTime&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;background-color: transparent; white-space: normal; color: rgb(31, 55, 127);&quot;&gt;endTime&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot;background-color: transparent; white-space: normal;&quot;&gt;&lt;font color=&quot;#2b91af&quot;&gt;...&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt;);&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font face=&quot;Cascadia Mono&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;font face=&quot;Cascadia Mono&quot;&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font face=&quot;Cascadia Mono&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt;    &lt;/font&gt;&lt;span style=&quot;background-color: transparent; white-space: normal; color: rgb(43, 145, 175);&quot;&gt;Task&lt;/span&gt;&lt;font face=&quot;Cascadia Mono&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt;&amp;lt;&lt;/font&gt;&lt;span style=&quot;background-color: transparent; white-space: normal; color: rgb(43, 145, 175);&quot;&gt;Shift&lt;/span&gt;&lt;font face=&quot;Cascadia Mono&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt;?&amp;gt; &lt;/font&gt;&lt;span style=&quot;background-color: transparent; white-space: normal; color: rgb(116, 83, 31);&quot;&gt;GetShiftAsync&lt;/span&gt;&lt;font face=&quot;Cascadia Mono&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt;(&lt;/font&gt;&lt;span style=&quot;background-color: transparent; white-space: normal; color: rgb(43, 145, 175);&quot;&gt;Guid&lt;/span&gt;&lt;font face=&quot;Cascadia Mono&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt; &lt;/font&gt;&lt;span style=&quot;background-color: transparent; white-space: normal; color: rgb(31, 55, 127);&quot;&gt;id&lt;/span&gt;&lt;font face=&quot;Cascadia Mono&quot; style=&quot;background-color: transparent; white-space: normal;&quot;&gt;&lt;font color=&quot;rgba(0, 0, 0, 0)&quot;&gt;, &lt;/font&gt;&lt;font color=&quot;#2b91af&quot;&gt;...&lt;/font&gt;&lt;/font&gt;&lt;font face=&quot;Cascadia Mono&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt;); (Added for consistency and tests)&lt;/font&gt;&lt;/div&gt;&lt;/font&gt;&lt;font face=&quot;Cascadia Mono&quot;&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font face=&quot;Cascadia Mono&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt;    &lt;/font&gt;&lt;span style=&quot;background-color: transparent; white-space: normal; color: rgb(43, 145, 175);&quot;&gt;Task&lt;/span&gt;&lt;font face=&quot;Cascadia Mono&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt;&amp;lt;&lt;/font&gt;&lt;span style=&quot;background-color: transparent; white-space: normal; color: rgb(43, 145, 175);&quot;&gt;IEnumerable&lt;/span&gt;&lt;font face=&quot;Cascadia Mono&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt;&amp;lt;&lt;/font&gt;&lt;span style=&quot;background-color: transparent; white-space: normal; color: rgb(43, 145, 175);&quot;&gt;Shift&lt;/span&gt;&lt;font face=&quot;Cascadia Mono&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt;&amp;gt;&amp;gt; &lt;/font&gt;&lt;span style=&quot;background-color: transparent; white-space: normal; color: rgb(116, 83, 31);&quot;&gt;GetShiftsFromEmployeeAsync&lt;/span&gt;&lt;font face=&quot;Cascadia Mono&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt;(&lt;/font&gt;&lt;span style=&quot;background-color: transparent; white-space: normal; color: rgb(43, 145, 175);&quot;&gt;Guid&lt;/span&gt;&lt;font face=&quot;Cascadia Mono&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt; &lt;/font&gt;&lt;span style=&quot;background-color: transparent; white-space: normal; color: rgb(31, 55, 127);&quot;&gt;employeeId&lt;/span&gt;&lt;font face=&quot;Cascadia Mono&quot; style=&quot;background-color: transparent; white-space: normal;&quot;&gt;&lt;font color=&quot;rgba(0, 0, 0, 0)&quot;&gt;, &lt;/font&gt;&lt;font color=&quot;#2b91af&quot;&gt;...&lt;/font&gt;&lt;/font&gt;&lt;font face=&quot;Cascadia Mono&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt;);&lt;/font&gt;&lt;/div&gt;&lt;/font&gt;&lt;font face=&quot;Cascadia Mono&quot;&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font face=&quot;Cascadia Mono&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt;    &lt;/font&gt;&lt;span style=&quot;background-color: transparent; white-space: normal; color: rgb(43, 145, 175);&quot;&gt;Task&lt;/span&gt;&lt;font face=&quot;Cascadia Mono&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt;&amp;lt;&lt;/font&gt;&lt;span style=&quot;background-color: transparent; white-space: normal; color: rgb(43, 145, 175);&quot;&gt;IEnumerable&lt;/span&gt;&lt;font face=&quot;Cascadia Mono&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt;&amp;lt;&lt;/font&gt;&lt;span style=&quot;background-color: transparent; white-space: normal; color: rgb(43, 145, 175);&quot;&gt;Shift&lt;/span&gt;&lt;font face=&quot;Cascadia Mono&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt;&amp;gt;&amp;gt; &lt;/font&gt;&lt;span style=&quot;background-color: transparent; white-space: normal; color: rgb(116, 83, 31);&quot;&gt;GetShiftsOnDateAsync&lt;/span&gt;&lt;font face=&quot;Cascadia Mono&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt;(&lt;/font&gt;&lt;span style=&quot;background-color: transparent; white-space: normal; color: rgb(43, 145, 175);&quot;&gt;DateOnly&lt;/span&gt;&lt;font face=&quot;Cascadia Mono&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt; &lt;/font&gt;&lt;span style=&quot;background-color: transparent; white-space: normal; color: rgb(31, 55, 127);&quot;&gt;date&lt;/span&gt;&lt;font face=&quot;Cascadia Mono&quot; style=&quot;background-color: transparent; white-space: normal;&quot;&gt;&lt;font color=&quot;rgba(0, 0, 0, 0)&quot;&gt;, &lt;/font&gt;&lt;font color=&quot;#2b91af&quot;&gt;...&lt;/font&gt;&lt;/font&gt;&lt;font face=&quot;Cascadia Mono&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt;);&lt;/font&gt;&lt;/div&gt;&lt;/font&gt;&lt;font face=&quot;Cascadia Mono&quot;&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font face=&quot;Cascadia Mono&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt;    &lt;/font&gt;&lt;span style=&quot;background-color: transparent; white-space: normal; color: rgb(43, 145, 175);&quot;&gt;Task&lt;/span&gt;&lt;font face=&quot;Cascadia Mono&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt; &lt;/font&gt;&lt;span style=&quot;background-color: transparent; white-space: normal; color: rgb(116, 83, 31);&quot;&gt;AssignEmployeeToShiftAsync&lt;/span&gt;&lt;font face=&quot;Cascadia Mono&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt;(&lt;/font&gt;&lt;span style=&quot;background-color: transparent; white-space: normal; color: rgb(43, 145, 175);&quot;&gt;Guid&lt;/span&gt;&lt;font face=&quot;Cascadia Mono&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt; &lt;/font&gt;&lt;span style=&quot;background-color: transparent; white-space: normal; color: rgb(31, 55, 127);&quot;&gt;shiftId&lt;/span&gt;&lt;font face=&quot;Cascadia Mono&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt;, &lt;/font&gt;&lt;span style=&quot;background-color: transparent; white-space: normal; color: rgb(43, 145, 175);&quot;&gt;Guid&lt;/span&gt;&lt;font face=&quot;Cascadia Mono&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt; &lt;/font&gt;&lt;span style=&quot;background-color: transparent; white-space: normal; color: rgb(31, 55, 127);&quot;&gt;employeeId&lt;/span&gt;&lt;font face=&quot;Cascadia Mono&quot; style=&quot;background-color: transparent; white-space: normal;&quot;&gt;&lt;font color=&quot;rgba(0, 0, 0, 0)&quot;&gt;, &lt;/font&gt;&lt;font color=&quot;#2b91af&quot;&gt;...&lt;/font&gt;&lt;/font&gt;&lt;font face=&quot;Cascadia Mono&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt;);&lt;/font&gt;&lt;/div&gt;&lt;/font&gt;&lt;/font&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="214" width="420" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-66" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;" value="&lt;pre style=&quot;font-family: &amp;quot;Cascadia Mono&amp;quot;; font-size: 9pt;&quot;&gt;&lt;span style=&quot;color:#2b91af&quot;&gt;IEmployeeService&lt;/span&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="190" width="460" x="3270" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-67" parent="JaOeu8YRZr9RDv0OAoG8-66" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;pre style=&quot;&quot;&gt;&lt;div style=&quot;font-family: &amp;quot;Cascadia Mono&amp;quot;; text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;background-color: transparent; white-space: normal; color: rgb(43, 145, 175);&quot;&gt;Task&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; white-space: normal; color: rgb(43, 145, 175);&quot;&gt;Employee&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt;&amp;gt; &lt;/span&gt;&lt;span style=&quot;background-color: transparent; white-space: normal; color: rgb(116, 83, 31);&quot;&gt;CreateEmployeeAsync&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;background-color: transparent; white-space: normal; color: rgb(0, 0, 255);&quot;&gt;string&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;background-color: transparent; white-space: normal; color: rgb(31, 55, 127);&quot;&gt;name&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot;background-color: transparent; white-space: normal; color: rgb(0, 0, 255);&quot;&gt;string&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;background-color: transparent; white-space: normal; color: rgb(31, 55, 127);&quot;&gt;lastname&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot;background-color: transparent; white-space: normal;&quot;&gt;&lt;font color=&quot;#2b91af&quot;&gt;...&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt;);&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font face=&quot;Cascadia Mono&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;font face=&quot;Cascadia Mono&quot; style=&quot;&quot;&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font face=&quot;Cascadia Mono&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt;    &lt;/font&gt;&lt;span style=&quot;background-color: transparent; white-space: normal; color: rgb(43, 145, 175);&quot;&gt;Task&lt;/span&gt;&lt;font face=&quot;Cascadia Mono&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt;&amp;lt;&lt;/font&gt;&lt;span style=&quot;background-color: transparent; white-space: normal; color: rgb(43, 145, 175);&quot;&gt;Employee&lt;/span&gt;&lt;font face=&quot;Cascadia Mono&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt;?&amp;gt; &lt;/font&gt;&lt;span style=&quot;background-color: transparent; white-space: normal; color: rgb(116, 83, 31);&quot;&gt;GetEmployeeAsync&lt;/span&gt;&lt;font face=&quot;Cascadia Mono&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt;(&lt;/font&gt;&lt;span style=&quot;background-color: transparent; white-space: normal; color: rgb(43, 145, 175);&quot;&gt;Guid&lt;/span&gt;&lt;font face=&quot;Cascadia Mono&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt; &lt;/font&gt;&lt;span style=&quot;background-color: transparent; white-space: normal; color: rgb(31, 55, 127);&quot;&gt;id&lt;/span&gt;&lt;font face=&quot;Cascadia Mono&quot; style=&quot;background-color: transparent; white-space: normal;&quot;&gt;&lt;font color=&quot;rgba(0, 0, 0, 0)&quot;&gt;, &lt;/font&gt;&lt;font color=&quot;#2b91af&quot;&gt;...&lt;/font&gt;&lt;/font&gt;&lt;font face=&quot;Cascadia Mono&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt;);&lt;/font&gt;&lt;/div&gt;&lt;/font&gt;&lt;font face=&quot;Cascadia Mono&quot; style=&quot;&quot;&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font face=&quot;Cascadia Mono&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt;    &lt;/font&gt;&lt;span style=&quot;background-color: transparent; white-space: normal; color: rgb(43, 145, 175);&quot;&gt;Task&lt;/span&gt;&lt;font face=&quot;Cascadia Mono&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt;&amp;lt;&lt;/font&gt;&lt;span style=&quot;background-color: transparent; white-space: normal; color: rgb(43, 145, 175);&quot;&gt;IEnumerable&lt;/span&gt;&lt;font face=&quot;Cascadia Mono&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt;&amp;lt;&lt;/font&gt;&lt;span style=&quot;background-color: transparent; white-space: normal; color: rgb(43, 145, 175);&quot;&gt;Employee&lt;/span&gt;&lt;font face=&quot;Cascadia Mono&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt;&amp;gt;&amp;gt; &lt;/font&gt;&lt;span style=&quot;background-color: transparent; white-space: normal; color: rgb(116, 83, 31);&quot;&gt;GetEmployeesAsync&lt;/span&gt;&lt;font face=&quot;Cascadia Mono&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt;(&lt;/font&gt;&lt;span style=&quot;background-color: transparent; white-space: normal; color: rgb(0, 0, 255);&quot;&gt;int&lt;/span&gt;&lt;font face=&quot;Cascadia Mono&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt; &lt;/font&gt;&lt;span style=&quot;background-color: transparent; white-space: normal; color: rgb(31, 55, 127);&quot;&gt;pageSize&lt;/span&gt;&lt;font face=&quot;Cascadia Mono&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt; = 0, &lt;/font&gt;&lt;span style=&quot;background-color: transparent; white-space: normal; color: rgb(0, 0, 255);&quot;&gt;int&lt;/span&gt;&lt;font face=&quot;Cascadia Mono&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt; &lt;/font&gt;&lt;span style=&quot;background-color: transparent; white-space: normal; color: rgb(31, 55, 127);&quot;&gt;pageNum&lt;/span&gt;&lt;font face=&quot;Cascadia Mono&quot; style=&quot;background-color: transparent; white-space: normal;&quot;&gt;&lt;font color=&quot;rgba(0, 0, 0, 0)&quot;&gt; = 0, &lt;/font&gt;&lt;font color=&quot;#2b91af&quot;&gt;...&lt;/font&gt;&lt;/font&gt;&lt;font face=&quot;Cascadia Mono&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt;);&lt;/font&gt;&lt;/div&gt;&lt;/font&gt;&lt;/font&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="164" width="460" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-70" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;" value="Employee Class" vertex="1">
+          <mxGeometry height="110" width="220" x="3350" y="595" as="geometry" />
+        </mxCell>
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-71" parent="JaOeu8YRZr9RDv0OAoG8-70" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="Guid Id" vertex="1">
+          <mxGeometry height="26" width="220" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-100" parent="JaOeu8YRZr9RDv0OAoG8-70" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="string Name" vertex="1">
+          <mxGeometry height="28" width="220" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-72" parent="JaOeu8YRZr9RDv0OAoG8-70" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="string Lastname" vertex="1">
+          <mxGeometry height="30" width="220" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-73" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;" value="Shift Class" vertex="1">
+          <mxGeometry height="210" width="220" x="2940" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-74" parent="JaOeu8YRZr9RDv0OAoG8-73" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="Guid Id" vertex="1">
+          <mxGeometry height="26" width="220" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-75" parent="JaOeu8YRZr9RDv0OAoG8-73" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="DateTime StartDate" vertex="1">
+          <mxGeometry height="26" width="220" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-76" parent="JaOeu8YRZr9RDv0OAoG8-73" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="DateTime EndTime" vertex="1">
+          <mxGeometry height="32" width="220" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-101" parent="JaOeu8YRZr9RDv0OAoG8-73" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="string Name &lt;i&gt;&lt;b&gt;(added for user identification)&lt;/b&gt;&lt;/i&gt;" vertex="1">
+          <mxGeometry height="40" width="220" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-102" parent="JaOeu8YRZr9RDv0OAoG8-73" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="List&amp;lt;Employee&amp;gt; Employees" vertex="1">
+          <mxGeometry height="30" width="220" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-78" parent="JaOeu8YRZr9RDv0OAoG8-73" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="Role Role" vertex="1">
+          <mxGeometry height="30" width="220" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-79" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;" value="Role Enum" vertex="1">
+          <mxGeometry height="52" width="220" x="3310" y="748" as="geometry" />
+        </mxCell>
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-80" parent="JaOeu8YRZr9RDv0OAoG8-79" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="Driver, Dispatcher, Supervisor" vertex="1">
+          <mxGeometry height="26" width="220" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-81" edge="1" parent="1" source="JaOeu8YRZr9RDv0OAoG8-102" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="JaOeu8YRZr9RDv0OAoG8-100" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="3090" y="660" as="sourcePoint" />
+            <mxPoint x="3200" y="641" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-83" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#009900;" value="" vertex="1">
+          <mxGeometry height="320" width="1000" x="2770" y="-20" as="geometry" />
+        </mxCell>
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-84" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#009900;" value="Demo.Infrastructure.SqlStorage Project" vertex="1">
+          <mxGeometry height="80" width="1000" x="2770" y="880" as="geometry" />
+        </mxCell>
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-86" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Domain Layer&lt;/font&gt;" vertex="1">
+          <mxGeometry height="50" width="80" x="2633" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-87" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Application&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Layer&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="110" x="2618" y="415" as="geometry" />
+        </mxCell>
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-88" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;User Layer&lt;/span&gt;" vertex="1">
+          <mxGeometry height="50" width="80" x="2633" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-89" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Persistance&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Layer&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="120" x="2618" y="885" as="geometry" />
+        </mxCell>
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-90" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#009900;" value="Infrastructure" vertex="1">
+          <mxGeometry height="800" width="130" x="3790" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-91" edge="1" parent="1" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="3690" y="900" as="sourcePoint" />
+            <mxPoint x="3690" y="800" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-92" edge="1" parent="1" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="3800" y="249.5" as="sourcePoint" />
+            <mxPoint x="3750" y="249.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-93" edge="1" parent="1" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="3800" y="900" as="sourcePoint" />
+            <mxPoint x="3750" y="900" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-94" edge="1" parent="1" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="3670" y="280" as="sourcePoint" />
+            <mxPoint x="3670" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-96" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Interfaces" vertex="1">
+          <mxGeometry height="30" width="120" x="2618" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-77" edge="1" parent="1" source="JaOeu8YRZr9RDv0OAoG8-78" style="endArrow=classic;html=1;rounded=0;entryX=-0.007;entryY=-0.002;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="JaOeu8YRZr9RDv0OAoG8-80" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="3260" y="760" as="sourcePoint" />
+            <mxPoint x="3120" y="680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-104" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;pre style=&quot;font-family: &amp;quot;Cascadia Mono&amp;quot;; font-size: 9pt;&quot;&gt;IEmployeeRepository, IShiftRepository&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="30" width="540" x="3010" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-105" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Interfaces" vertex="1">
+          <mxGeometry height="30" width="120" x="2633" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-106" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;pre style=&quot;font-family: &amp;quot;Cascadia Mono&amp;quot;; font-size: 9pt;&quot;&gt;IShiftService, IEmployeeService&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="30" width="540" x="3000" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-108" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="In-Memory&amp;nbsp;&lt;div&gt;Database&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="120" x="3790" y="890" as="geometry" />
+        </mxCell>
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-109" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value=".Net Core 10&amp;nbsp;&lt;div&gt;Minimal Api&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="120" x="3795" y="235" as="geometry" />
+        </mxCell>
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-111" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;" value="&lt;pre style=&quot;font-family: &amp;quot;Cascadia Mono&amp;quot;; font-size: 9pt;&quot;&gt;&lt;span style=&quot;color:#2b91af&quot;&gt;ShiftEndpoints&lt;/span&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="270" width="420" x="2850" y="5" as="geometry" />
+        </mxCell>
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-112" parent="JaOeu8YRZr9RDv0OAoG8-111" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;pre style=&quot;&quot;&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font face=&quot;Cascadia Mono&quot;&gt;POST /api/shifts&lt;br/&gt;Parameters: name, role, startTimeUtc, endTimeUtc&lt;br/&gt;&lt;br/&gt;GET /api/shifts/{id}&lt;br/&gt;Parameter: id&lt;br/&gt;&lt;br/&gt;GET /api/shifts/employee/{employeeId}&lt;br/&gt;Parameter: employeeId&lt;br/&gt;&lt;br/&gt;GET /api/shifts/date/{date}&lt;br/&gt;Parameter: date&lt;br/&gt;&lt;br/&gt;PUT /api/shifts/{shiftId}/employee/{employeeId}&lt;br/&gt;Parameters: shiftId, employeeId&lt;/font&gt;&lt;/div&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="244" width="420" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-113" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;" value="&lt;pre style=&quot;font-family: &amp;quot;Cascadia Mono&amp;quot;; font-size: 9pt;&quot;&gt;&lt;span style=&quot;color:#2b91af&quot;&gt;EmployeeEndpoints&lt;/span&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="190" width="380" x="3320" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-114" parent="JaOeu8YRZr9RDv0OAoG8-113" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;pre style=&quot;&quot;&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font face=&quot;Cascadia Mono&quot;&gt;POST /api/employees &lt;br/&gt;Parameters: name, lastname&lt;br/&gt;&lt;br/&gt;GET /api/employees/{id}&lt;br/&gt;Parameter: id&lt;br/&gt;&lt;br/&gt;GET /api/employees/&lt;br/&gt;Parameters: int? pageSize, int? pageNum&lt;/font&gt;&lt;/div&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="164" width="380" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-115" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Demo.Domain Project" vertex="1">
+          <mxGeometry height="30" width="120" x="2613" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-116" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Demo.Api Project" vertex="1">
+          <mxGeometry height="30" width="120" x="2613" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="JaOeu8YRZr9RDv0OAoG8-118" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Based on business analyst description and ubiquitous language" vertex="1">
+          <mxGeometry height="30" width="410" x="1787" y="90" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
