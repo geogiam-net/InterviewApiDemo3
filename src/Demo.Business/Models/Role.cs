@@ -1,6 +1,6 @@
 using System.Runtime.Serialization;
 
-namespace Demo.Domain.Models;
+namespace Demo.Business.Models;
 
 public enum Role
 {

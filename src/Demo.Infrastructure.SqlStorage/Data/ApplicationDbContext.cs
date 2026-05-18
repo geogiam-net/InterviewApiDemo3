@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using Demo.Domain.Models;
+using Demo.Business.Models;
 
 namespace Demo.Infrastructure.SqlStorage.Data;
 

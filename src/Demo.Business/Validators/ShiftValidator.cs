@@ -1,7 +1,7 @@
-﻿using Demo.Domain.Extensions;
-using Demo.Domain.Models;
+﻿using Demo.Business.Extensions;
+using Demo.Business.Models;
 
-namespace Demo.Domain.Validators;
+namespace Demo.Business.Validators;
 
 public static class ShiftValidator
 {

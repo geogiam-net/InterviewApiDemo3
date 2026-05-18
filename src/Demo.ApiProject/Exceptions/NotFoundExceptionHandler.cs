@@ -1,4 +1,4 @@
-﻿using Demo.Domain.Exceptions;
+﻿using Demo.Business.Exceptions;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 

@@ -1,4 +1,4 @@
-﻿namespace Demo.Domain.Extensions
+﻿namespace Demo.Business.Extensions
 {
     public static class DateTimeExtensions
     {

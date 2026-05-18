@@ -1,4 +1,4 @@
-﻿using Demo.Domain.Models;
+﻿using Demo.Business.Models;
 
 namespace Demo.Api.Dtos;
 

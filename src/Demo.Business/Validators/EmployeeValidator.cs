@@ -1,6 +1,6 @@
-﻿using Demo.Domain.Models;
+﻿using Demo.Business.Models;
 
-namespace Demo.Domain.Validators;
+namespace Demo.Business.Validators;
 
 public static class EmployeeValidator
 {

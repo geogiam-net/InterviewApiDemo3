@@ -1,4 +1,4 @@
-﻿namespace Demo.Domain.Models;
+﻿namespace Demo.Business.Models;
 
 public class Shift
 {

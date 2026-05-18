@@ -1,9 +1,9 @@
 using Demo.Api.Endpoints;
-using Demo.Domain.Interfaces;
+using Demo.Business.Interfaces;
 using Demo.Api.Exceptions;
 using Demo.Api.Startup;
 using Demo.Infrastructure.SqlStorage.Services;
-using Demo.Domain.Services;
+using Demo.Business.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 

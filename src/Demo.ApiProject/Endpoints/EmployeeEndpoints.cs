@@ -1,6 +1,6 @@
 
 using Demo.Api.Dtos;
-using Demo.Domain.Interfaces;
+using Demo.Business.Interfaces;
 
 namespace Demo.Api.Endpoints;
 

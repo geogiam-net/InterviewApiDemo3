@@ -1,4 +1,4 @@
-﻿namespace Demo.Domain.Exceptions
+﻿namespace Demo.Business.Exceptions
 {
     public class ValidationException : Exception
     {

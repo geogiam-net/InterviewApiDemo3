@@ -1,6 +1,6 @@
-﻿using Demo.Domain.Models;
+﻿using Demo.Business.Models;
 
-namespace Demo.Domain.Interfaces;
+namespace Demo.Business.Interfaces;
 
 public interface IEmployeeService
 {

@@ -1,9 +1,9 @@
-﻿using Demo.Domain.Exceptions;
-using Demo.Domain.Interfaces;
-using Demo.Domain.Models;
-using Demo.Domain.Validators;
+﻿using Demo.Business.Exceptions;
+using Demo.Business.Interfaces;
+using Demo.Business.Models;
+using Demo.Business.Validators;
 
-namespace Demo.Domain.Services;
+namespace Demo.Business.Services;
 
 public class EmployeeService(IEmployeeRepository employeeRepository) : IEmployeeService
 {

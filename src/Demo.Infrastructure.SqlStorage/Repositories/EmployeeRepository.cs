@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Demo.Domain.Interfaces;
-using Demo.Domain.Models;
+using Demo.Business.Interfaces;
+using Demo.Business.Models;
 using Demo.Infrastructure.SqlStorage.Data;
 
 namespace Demo.Infrastructure.SqlStorage.Services;

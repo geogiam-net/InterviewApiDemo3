@@ -1,10 +1,10 @@
 ﻿
-using Demo.Domain.Interfaces;
-using Demo.Domain.Models;
-using Demo.Domain.Validators;
-using Demo.Domain.Exceptions;
+using Demo.Business.Interfaces;
+using Demo.Business.Models;
+using Demo.Business.Validators;
+using Demo.Business.Exceptions;
 
-namespace Demo.Domain.Services;
+namespace Demo.Business.Services;
 
 public class ShiftService(IShiftRepository shiftRepository, IEmployeeService employeeService) : IShiftService
 {
