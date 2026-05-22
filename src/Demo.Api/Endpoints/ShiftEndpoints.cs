@@ -9,10 +9,10 @@ internal static class ShiftEndpoints
     internal static void MapShiftEndpoints(this IEndpointRouteBuilder builder)
     {
         builder.MapPost("/api/shifts",
-            async Task<IResult> (string name, Role role, DateTime startTimeUtc, DateTime endTimeUtc, 
+            async Task<IResult> (NewShiftDto shift, 
             IShiftService shiftService, CancellationToken cancellationToken) =>
             {
-                var newShift = await shiftService.CreateShiftAsync(name, role, startTimeUtc, endTimeUtc, cancellationToken);
+                var newShift = await shiftService.CreateShiftAsync(shift.Name, shift.Role, shift.StartTimeUtc, shift.EndTimeUtc, cancellationToken);
 
                 // return 201 with link to created resource
                 return TypedResults.Created(

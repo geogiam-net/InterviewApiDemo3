@@ -13,3 +13,5 @@
 /src/Demo.Infrastructure.SqlStorage/obj
 /src/Demo.Business/bin/Debug/net10.0
 /src/Demo.Business/obj
+/src/Demo.Api/bin/Debug/net10.0
+/src/Demo.Api/obj

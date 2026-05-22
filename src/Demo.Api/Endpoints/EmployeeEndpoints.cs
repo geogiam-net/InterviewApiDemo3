@@ -9,10 +9,10 @@ internal static class EmployeeEndpoints
     internal static void MapEmployeeEndpoints(this IEndpointRouteBuilder builder)
     {
         builder.MapPost("/api/employees",
-            async Task<IResult> (string name, string lastname, 
+            async Task<IResult> (NewEmployeeDto employee, 
             IEmployeeService employeeService, CancellationToken cancellationToken) =>
             {
-                var newEmployee = await employeeService.CreateEmployeeAsync(name, lastname, cancellationToken);
+                var newEmployee = await employeeService.CreateEmployeeAsync(employee.Name, employee.Lastname, cancellationToken);
 
                 // return 201 with link to created resource
                 return TypedResults.Created(
