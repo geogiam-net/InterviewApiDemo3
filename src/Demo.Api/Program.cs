@@ -1,9 +1,8 @@
 using Demo.Api.Endpoints;
-using Demo.Business.Interfaces;
-using Demo.Api.Exceptions;
+using Demo.Application.Interfaces;
 using Demo.Api.Startup;
-using Demo.Infrastructure.SqlStorage.Services;
-using Demo.Business.Services;
+using Demo.Infrastructure.SqlRepository.Repositories;
+using Demo.Application.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,9 +17,6 @@ builder.Services.AddScoped<IShiftService, ShiftService>();
 builder.Services.AddInMemoryDbContext();
 
 builder.Services.AddProblemDetails();
-builder.Services.AddExceptionHandler<ValidationExceptionHandler>();
-builder.Services.AddExceptionHandler<ConflictExceptionHandler>();
-builder.Services.AddExceptionHandler<NotFoundExceptionHandler>();
 
 var app = builder.Build();
 

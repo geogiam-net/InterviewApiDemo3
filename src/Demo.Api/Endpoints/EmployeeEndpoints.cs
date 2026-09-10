@@ -1,6 +1,7 @@
 
 using Demo.Api.Dtos;
-using Demo.Business.Interfaces;
+using Demo.Application.Interfaces;
+using Demo.Domain.Enums;
 
 namespace Demo.Api.Endpoints;
 
@@ -8,38 +9,70 @@ internal static class EmployeeEndpoints
 {
     internal static void MapEmployeeEndpoints(this IEndpointRouteBuilder builder)
     {
-        builder.MapPost("/api/employees",
-            async Task<IResult> (NewEmployeeDto employee, 
-            IEmployeeService employeeService, CancellationToken cancellationToken) =>
-            {
-                var newEmployee = await employeeService.CreateEmployeeAsync(employee.Name, employee.Lastname, cancellationToken);
+        builder.MapPost(Routes.Employees, CreateEmployeeAsync);
+        builder.MapGet(Routes.EmployeeById, GetEmployeeByIdAsync);
+        builder.MapGet(Routes.Employees, GetEmployeesAsync);
+    }
 
-                // return 201 with link to created resource
-                return TypedResults.Created(
-                          uri: $"/api/employees/{newEmployee.Id}",
-                          value: new EmployeeDto(newEmployee));
-            });
+    private static async Task<IResult> CreateEmployeeAsync(
+            NewEmployeeDto employee,
+            IEmployeeService employeeService, 
+            CancellationToken ct
+        )
+    {
+        var result = await employeeService.CreateEmployeeAsync(employee.Name, employee.Lastname, ct);
 
-        builder.MapGet("/api/employees/{id}",
-            async Task<IResult> (Guid id, 
-            IEmployeeService employeeService, CancellationToken cancellationToken) =>
-            {
-                var employee = await employeeService.GetEmployeeAsync(id, cancellationToken);
-                if (employee is null)
-                {
-                    return TypedResults.NotFound();
-                }
+        if (result.ErrorCode == Error.ValidationError)
+        {
+            return Results.BadRequest(result.ErrorMessages);
+        }
+        else if (result.ErrorCode == Error.Conflict)
+        {
+            return Results.Conflict(result.ErrorMessages);
+        }
+        else  if (result.ErrorCode != Error.None)
+        {
+            return Results.InternalServerError(result.ErrorMessages);
+        }
 
-                return TypedResults.Ok(new EmployeeDto(employee));
-            });
+        // return 201 with link to created resource
+        return TypedResults.Created(
+                  uri: $"{Routes.Employees}/{result.Result!.Id}",
+                  value: new EmployeeDto(result.Result));
+    }
 
-        builder.MapGet("/api/employees/",
-            async Task<IResult> (int? pageSize, int? pageNum, 
-            IEmployeeService employeeService, CancellationToken cancellationToken) =>
-            {
-                var employees = await employeeService.GetEmployeesAsync(pageSize ?? 0, pageNum ?? 0, cancellationToken);
-                var employeeDtos = employees.Select(e => new EmployeeDto(e));
-                return TypedResults.Ok(employeeDtos);
-            });
+    private static async Task<IResult> GetEmployeeByIdAsync(
+            Guid id,
+            IEmployeeService employeeService,
+            CancellationToken ct
+        )
+    {
+        var result = await employeeService.GetEmployeeAsync(id, ct);
+        if (result.ErrorCode == Error.NotFound)
+        {
+            return Results.NotFound(result.ErrorMessages);
+        }
+        else if (result.ErrorCode != Error.None)
+        {
+            return Results.InternalServerError(result.ErrorMessages);
+        }
+
+        return TypedResults.Ok(new EmployeeDto(result.Result!));
+    }
+
+    private static async Task<IResult> GetEmployeesAsync(
+        int? pageSize,
+        int? pageNum,
+        IEmployeeService employeeService,
+        CancellationToken ct
+    )
+    {
+        var employees = await employeeService.GetEmployeesAsync(pageSize ?? 0, pageNum ?? 0, ct);
+        if(employees == null || !employees.Any())
+        {
+            return Results.NotFound();
+        }
+        var employeeDtos = employees.Select(e => new EmployeeDto(e));
+        return TypedResults.Ok(employeeDtos);
     }
 }

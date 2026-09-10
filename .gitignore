@@ -15,3 +15,7 @@
 /src/Demo.Business/obj
 /src/Demo.Api/bin/Debug/net10.0
 /src/Demo.Api/obj
+/src/Demo.Application/bin/Debug/net10.0
+/src/Demo.Application/obj
+/src/Demo.Infrastructure.SqlRepository/bin/Debug/net10.0
+/src/Demo.Infrastructure.SqlRepository/obj

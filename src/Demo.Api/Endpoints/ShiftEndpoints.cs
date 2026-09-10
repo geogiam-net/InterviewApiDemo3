@@ -1,6 +1,6 @@
 using Demo.Api.Dtos;
-using Demo.Business.Interfaces;
-using Demo.Business.Models;
+using Demo.Application.Interfaces;
+using Demo.Domain.Enums;
 
 namespace Demo.Api.Endpoints;
 
@@ -8,55 +8,112 @@ internal static class ShiftEndpoints
 {
     internal static void MapShiftEndpoints(this IEndpointRouteBuilder builder)
     {
-        builder.MapPost("/api/shifts",
-            async Task<IResult> (NewShiftDto shift, 
-            IShiftService shiftService, CancellationToken cancellationToken) =>
-            {
-                var newShift = await shiftService.CreateShiftAsync(shift.Name, shift.Role, shift.StartTimeUtc, shift.EndTimeUtc, cancellationToken);
+        builder.MapPost(Routes.Shifts, CreateShiftAsync);
+        builder.MapGet(Routes.ShiftById, ShiftByIdAsync);
+        builder.MapGet(Routes.ShiftsFromEmployee, GetShiftsFromEmployeeAsync);
+        builder.MapGet(Routes.ShiftsOnDate, GetShiftsOnDateAsync);
+        builder.MapPut(Routes.AssignEmployeeToShift, AssignEmployeeToShiftAsync);
+    }
 
-                // return 201 with link to created resource
-                return TypedResults.Created(
-                          uri: $"/api/shifts/{newShift.Id}",
-                          value: new ShiftDto(newShift));
-            });
+    private static async Task<IResult> CreateShiftAsync(
+        NewShiftDto shift,
+        IShiftService shiftService,
+        CancellationToken ct
+    )
+    {
+        var result = await shiftService.CreateShiftAsync(shift.Name, shift.Role, shift.StartTimeUtc, shift.EndTimeUtc, ct);
 
-        // Not in requirements but added because we reference the url when we create a new shift
-        builder.MapGet("/api/shifts/{id}",
-            async Task<IResult> (Guid id,
-            IShiftService shiftService, CancellationToken cancellationToken) =>
-            {
-                var shift = await shiftService.GetShiftAsync(id, cancellationToken);
-                if (shift is null)
-                {
-                    return TypedResults.NotFound();
-                }
+        if (result.ErrorCode == Error.ValidationError)
+        {
+            return Results.BadRequest(result.ErrorMessages);
+        }
+        else if (result.ErrorCode == Error.Conflict)
+        {
+            return Results.Conflict(result.ErrorMessages);
+        }
+        else if (result.ErrorCode != Error.None)
+        {
+            return Results.InternalServerError(result.ErrorMessages);
+        }
 
-                return TypedResults.Ok(new ShiftDto(shift));
-            });
+        // return 201 with link to created resource
+        return TypedResults.Created(
+                  uri: $"{Routes.Shifts}/{result.Result!.Id}",
+                  value: new ShiftDto(result.Result));
+    }
 
-        builder.MapGet("/api/shifts/employee/{employeeId}",
-            async Task<IResult> (Guid employeeId,
-            IShiftService shiftService, CancellationToken cancellationToken) =>
-            {
-                var shifts = await shiftService.GetShiftsFromEmployeeAsync(employeeId, cancellationToken);
-                var shiftDtos = shifts.Select(e => new ShiftDto(e));
-                return TypedResults.Ok(shiftDtos);
-            });
+    private static async Task<IResult> ShiftByIdAsync(
+        Guid id,
+        IShiftService shiftService,
+        CancellationToken ct
+    )
+    {
+        var result = await shiftService.GetShiftAsync(id, ct);
 
-        builder.MapGet("/api/shifts/date/{date}",
-            async Task<IResult> (DateOnly dateUtc, IShiftService shiftService, CancellationToken cancellationToken) =>
-            {
-                var shifts = await shiftService.GetShiftsOnDateAsync(dateUtc, cancellationToken);
-                var shiftDtos = shifts.Select(e => new ShiftDto(e));
-                return TypedResults.Ok(shiftDtos);
-            });
+        if (result.ErrorCode == Error.NotFound)
+        {
+            return Results.NotFound(result.ErrorMessages);
+        }
+        else if (result.ErrorCode != Error.None)
+        {
+            return Results.InternalServerError(result.ErrorMessages);
+        }
 
-        builder.MapPut("/api/shifts/{shiftId}/employee/{employeeId}",
-             async Task<IResult> (Guid shiftId, Guid employeeId,
-             IShiftService shiftService, CancellationToken cancellationToken) =>
-             {
-                 await shiftService.AssignEmployeeToShiftAsync(shiftId, employeeId, cancellationToken);
-                 return TypedResults.Ok();
-             });
+        return TypedResults.Ok(new ShiftDto(result.Result!));
+    }
+
+    private static async Task<IResult> GetShiftsFromEmployeeAsync(
+        Guid employeeId,
+        IShiftService shiftService,
+        CancellationToken ct
+    )
+    {
+        var shifts = await shiftService.GetShiftsFromEmployeeAsync(employeeId, ct);
+        if (shifts == null || !shifts.Any())
+        {
+            return Results.NotFound();
+        }
+        var shiftDtos = shifts.Select(e => new ShiftDto(e));
+        return TypedResults.Ok(shiftDtos);
+    }
+
+    private static async Task<IResult> GetShiftsOnDateAsync(
+        DateOnly dateUtc, 
+        IShiftService shiftService,
+        CancellationToken ct
+    )
+    {
+        var shifts = await shiftService.GetShiftsOnDateAsync(dateUtc, ct);
+
+        if (shifts == null || !shifts.Any())
+        {
+            return Results.NotFound();
+        }
+        var shiftDtos = shifts.Select(e => new ShiftDto(e));
+        return TypedResults.Ok(shiftDtos);
+    }
+
+    private static async Task<IResult> AssignEmployeeToShiftAsync(
+        Guid shiftId, Guid employeeId,
+             IShiftService shiftService,
+        CancellationToken ct
+    )
+    {
+        var result = await shiftService.AssignEmployeeToShiftAsync(shiftId, employeeId, ct);
+
+        if (result.ErrorCode == Error.NotFound)
+        {
+            return Results.NotFound(result.ErrorMessages);
+        }
+        else if (result.ErrorCode == Error.Conflict)
+        {
+            return Results.Conflict(result.ErrorMessages);
+        }
+        else if (result.ErrorCode != Error.None)
+        {
+            return Results.InternalServerError(result.ErrorMessages);
+        }
+
+        return TypedResults.Ok();
     }
 }

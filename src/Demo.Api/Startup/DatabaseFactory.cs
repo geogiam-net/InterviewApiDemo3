@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Demo.Infrastructure.SqlStorage.Data;
+using Demo.Infrastructure.SqlRepository.Data;
 
 namespace Demo.Api.Startup;
 

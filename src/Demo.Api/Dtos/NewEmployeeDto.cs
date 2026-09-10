@@ -1,7 +1,4 @@
-﻿
-using Demo.Business.Models;
-
-namespace Demo.Api.Dtos;
+﻿namespace Demo.Api.Dtos;
 
 public class NewEmployeeDto
 {

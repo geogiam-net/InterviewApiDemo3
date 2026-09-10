@@ -1,5 +1,6 @@
 <Solution>
   <Project Path="src/Demo.Api/Demo.Api.csproj" />
-  <Project Path="src/Demo.Business/Demo.Business.csproj" />
-  <Project Path="src/Demo.Infrastructure.SqlStorage/Demo.Infrastructure.SqlStorage.csproj" />
+  <Project Path="src/Demo.Application/Demo.Application.csproj" />
+  <Project Path="src/Demo.Domain/Demo.Domain.csproj" />
+  <Project Path="src/Demo.Infrastructure.SqlRepository/Demo.Infrastructure.SqlRepository.csproj" />
 </Solution>

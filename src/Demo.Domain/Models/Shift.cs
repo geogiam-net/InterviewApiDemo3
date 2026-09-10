@@ -1,10 +1,19 @@
 ﻿using Demo.Domain.Enums;
-using Demo.Domain.Models;
 
-namespace Demo.Api.Dtos;
+namespace Demo.Domain.Models;
 
-public class ShiftDto
+public class Shift
 {
+    public Shift() { }
+
+    public Shift(string name, Role role, DateTime startTime, DateTime endTime)
+    {
+        Name = name;
+        Role = role;
+        StartTime = startTime;
+        EndTime = endTime;
+    }
+
     public Guid Id { get; set; } = default;
 
     public string Name { get; set; } = string.Empty;
@@ -16,19 +25,4 @@ public class ShiftDto
     public DateTime EndTime { get; set; } = default;
 
     public List<Employee> Employees { get; set; } = new List<Employee>();
-
-
-    public ShiftDto()
-    {
-    }
-
-    public ShiftDto(Shift shift)
-    {
-        Id = shift.Id;
-        Name = shift.Name;
-        Role = shift.Role;
-        StartTime = shift.StartTime;
-        EndTime = shift.EndTime;
-        Employees = shift.Employees;
-    }
 }
