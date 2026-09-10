@@ -1,6 +1,5 @@
 using Demo.Api.Dtos;
 using Demo.Application.Interfaces;
-using Demo.Domain.Enums;
 
 namespace Demo.Api.Endpoints;
 
@@ -23,23 +22,11 @@ internal static class ShiftEndpoints
     {
         var result = await shiftService.CreateShiftAsync(shift.Name, shift.Role, shift.StartTimeUtc, shift.EndTimeUtc, ct);
 
-        if (result.ErrorCode == Error.ValidationError)
-        {
-            return Results.BadRequest(result.ErrorMessages);
-        }
-        else if (result.ErrorCode == Error.Conflict)
-        {
-            return Results.Conflict(result.ErrorMessages);
-        }
-        else if (result.ErrorCode != Error.None)
-        {
-            return Results.InternalServerError(result.ErrorMessages);
-        }
-
-        // return 201 with link to created resource
-        return TypedResults.Created(
-                  uri: $"{Routes.Shifts}/{result.Result!.Id}",
-                  value: new ShiftDto(result.Result));
+        return ResultDtoResultMapper.ToHttpResult(
+            result,
+            shift => TypedResults.Created(
+                uri: $"{Routes.Shifts}/{shift!.Id}",
+                value: new ShiftDto(shift)));
     }
 
     private static async Task<IResult> ShiftByIdAsync(
@@ -50,16 +37,9 @@ internal static class ShiftEndpoints
     {
         var result = await shiftService.GetShiftAsync(id, ct);
 
-        if (result.ErrorCode == Error.NotFound)
-        {
-            return Results.NotFound(result.ErrorMessages);
-        }
-        else if (result.ErrorCode != Error.None)
-        {
-            return Results.InternalServerError(result.ErrorMessages);
-        }
-
-        return TypedResults.Ok(new ShiftDto(result.Result!));
+        return ResultDtoResultMapper.ToHttpResult(
+            result,
+            shift => TypedResults.Ok(new ShiftDto(shift!)));
     }
 
     private static async Task<IResult> GetShiftsFromEmployeeAsync(
@@ -101,19 +81,8 @@ internal static class ShiftEndpoints
     {
         var result = await shiftService.AssignEmployeeToShiftAsync(shiftId, employeeId, ct);
 
-        if (result.ErrorCode == Error.NotFound)
-        {
-            return Results.NotFound(result.ErrorMessages);
-        }
-        else if (result.ErrorCode == Error.Conflict)
-        {
-            return Results.Conflict(result.ErrorMessages);
-        }
-        else if (result.ErrorCode != Error.None)
-        {
-            return Results.InternalServerError(result.ErrorMessages);
-        }
-
-        return TypedResults.Ok();
+        return ResultDtoResultMapper.ToHttpResult(
+            result,
+            _ => TypedResults.Ok());
     }
 }
