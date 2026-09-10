@@ -48,10 +48,25 @@ public class EmployeeService(IEmployeeRepository employeeRepository) : IEmployee
     }
 
     public async Task<IEnumerable<Employee>> GetEmployeesAsync(
-        int pageSize = 0, 
+        int pageSize = 20, 
         int pageNum = 0, 
         CancellationToken ct = default) 
-    { 
+    {
+        // test pageSize is not null and if zero 100 and never over 1000
+        if (pageSize <= 0)
+        {
+            pageSize = 20;
+        }
+        else if (pageSize > 1000)
+        {
+            pageSize = 1000;
+        }
+
+        if (pageNum <= 0)
+        {
+            pageNum = 100;
+        }
+
         return await employeeRepository.GetEmployeesAsync(pageSize, pageNum, ct);
     }
 }
